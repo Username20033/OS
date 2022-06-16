@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 5px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display-none{
+    display: none;
+}
+.padding-5px p,button{
+    padding: 5px;
+}
+
+.menu-section{
+    width: 100%;
+    border: 1px solid black;
+}
+.menu{
+    width: 30%;
+    border-right: 1px solid black;
+}
+.functional{
+    width: 70%;   
+}
+.custom-selection{
+    width: 50%;
+    align-items: center;
+}
+.add-process{
+    width: 50%;
+    align-items: center;
+}
+.delete-process{
+    width: 100%;
+}
+.radio-buttons{
+    width: 40%;
+    align-items: center;
+}
+.delete-functional{
+    width: 60%;
+}
+.specifiedBlock{
+    width: 100%;
+    align-items: center;
+}
+.allBlocksProcess{
+    width: 100%;
+    align-items: center;
+}
+.cyclic-selection{
+    width: 100%;
+}
+.memory-allocation-free{
+    width: 60%;
+}
+.memory-allocation{
+    width: 100%;
+    align-items: center;
+}
+.memory-free{
+    width: 100%;
+    align-items: center;
+}
+#main-section{
+    width: 100%;
+    padding: 25px;
+}
+#main-section table,td,th{
+    border: 1px solid black;
+}
+.table-block {
+    width: 70%;
+    height: 600px;
+    overflow: scroll;
+    
+}
+.table-block table{
+    width: 100%;
+    
+}
+.table-block-info{
+    width: 30%;
+    text-align: center;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <section class = "menu-section flex-row">
+        <nav class = "menu flex-column">
+            <button id = "menu-button-1">
+                Ручное выделение памяти
+            </button>
+            <button id = "menu-button-2">
+                Добавление процесса
+            </button>
+            <button id = "menu-button-3">
+                Удаление процесса
+            </button>
+            <button id = "menu-button-4">
+                Циклическое выделение/освобождение памяти
+            </button>
+        </nav>
+        <section class = "functional flex-column flex-centre" id = "functional">
+            <article class = "custom-selection flex-column display-none padding-5px" id = "custom-selection">
+                <p>Объем выделяемой памяти:<input type = "number" pattern="^[ 0-9]+$" id = "user-memory" min = "1"></p>
+                <p>Число выделяемых страниц:<input type = "number" pattern="^[ 0-9]+$" id = "user-pages" min = "1"></p>
+                <button id = "button-user-give">Веделить</button>
+            </article>
+
+            <article class = "add-process flex-column display-none padding-5px" id = "add-process">
+                <p>Введите память процесса:<input type = "number" pattern="^[ 0-9]+$" id = "process-add" min = "1"></p>
+                <button id = "button-process-add">Добавить процесс</button>
+            </article>
+
+
+            <article class = "delete-process flex-row display-none padding-5px" id = "delete-process">
+                <div class = "radio-buttons flex-centre flex-column padding-5px">
+                    <p><input type = "radio" name = "delete-radio" id = "specified-block-radio">Заданный блок</p>
+                    <p><input type = "radio" name = "delete-radio" id = "all-blocks-process-radio">Все блоки заданного процесса</p>
+                </div>
+
+                <div class = "delete-functional flex-column">
+                    <div class = "specified-block flex-centre flex-column display-none padding-5px" id = "specified-block">
+                        <p>Номер блока:<input type = "number" pattern="^[ 0-9]+$" id = "block-number-delete" min = "1"></p>
+                        <button id = "button-delete-block">Удалить блок</button>
+                    </div>
+
+                    <div class = "all-blocks-process flex-centre flex-column display-none padding-5px" id = "all-blocks-process">
+                        <p>Имя процесса:<input type = "text" pattern="" id = "name-process-delete"></p>
+                        <button id = "button-delete-process">Удалить процесс</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class = "cyclic-selection flex-row display-none padding-5px" id = "cyclic-selection">
+                <div class = "radio-buttons flex-column flex-centre padding-5px">
+                    <p><input type = "radio" name = "memory-allocation-free" id = "memory-allocation-radio">Выделение памяти</p>
+                    <p><input type = "radio" name = "memory-allocation-free" id = "memory-free-radio">Освобождение памяти</p>
+                </div>
+
+                <div class = "memory-allocation-free flex-column">
+                    <div class = "memory-allocation flex-column display-none padding-5px" id = "memory-allocation">
+                        <button id = "button-memory-allocation">Выделение памяти</button>
+                    </div>
+                    <div class = "memory-free flex-column display-none padding-5px" id = "memory-free">
+                        <button id = "button-memory-free">Освобождение памяти</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </section>
+    <section id = "main-section" class = "flex-centre">
+        <div class = "table-block" id = "table-block">
+
+        </div>
+        <div class = "table-block-info" id = "table-block-info">
+            <p id = "size">
+                
+            </p>
+            <p id = "free-size">
+               
+            </p>
+            <p id = "max-size">
+                
+            </p>
+            <p id = "count-false">
+                
+            </p>
+            <p id = "count-true">
+                
+            </p>
+        </div>     
+    </section>
+    <script src = "script/script.js"></script>
+</body>
+</html>   
